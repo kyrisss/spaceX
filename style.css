@@ -1,5 +1,7 @@
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -33,21 +35,35 @@ body{
 }
 
 .header_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header_logo{
     height: 100px;
     width: 316px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 
     border: .1px solid transparent;
-    border-image: linear-gradient( grey, grey);
+    -o-border-image: -o-linear-gradient( grey, grey);
+       border-image: -webkit-gradient( linear, left top, left bottom, from(grey), to(grey));
+       border-image: linear-gradient( grey, grey);
     border-image-slice: 1;
 
     --b:2px;   /* thickness of the border */
@@ -76,10 +92,16 @@ body{
 }
 
 .nav_list{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 680px;
     list-style-type: none;
+    z-index: 1;
 }
 
 .nav_link{
@@ -106,10 +128,13 @@ body{
     max-width: 426px;
     font-family: MuseoSansCyrl, sans-serif;
     line-height: 1.2;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ff4106));
+    background: -o-linear-gradient(left, #ffffff, #ff4106);
     background: linear-gradient(to right, #ffffff, #ff4106);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    clip-path: polygon(0 0, 100% 0, 100% 14%, 96% 43%, 94% 64%, 90% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 14%, 96% 43%, 94% 64%, 90% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 14%, 96% 43%, 94% 64%, 90% 100%, 0 100%);
     
 }
 
@@ -125,14 +150,22 @@ body{
 }
 
 .main .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .btn_point{
     margin-top: 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 
 }
 
@@ -151,7 +184,8 @@ body{
     position: relative;
 
     border: .5px solid transparent;
-    border-image: linear-gradient(10deg, rgba(102, 153, 204, 1) 20%, rgba(102, 153, 204, 0.0) 40%,  rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 1) 100%);
+    -o-border-image: -o-linear-gradient(80deg, rgba(102, 153, 204, 1) 20%, rgba(102, 153, 204, 0.0) 40%,  rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 1) 100%);
+       border-image: linear-gradient(10deg, rgba(102, 153, 204, 1) 20%, rgba(102, 153, 204, 0.0) 40%,  rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 1) 100%);
     border-image-slice: 1;
 
     --b:2px;   /* thickness of the border */
@@ -184,71 +218,112 @@ body{
     height: 320px;
     font-family: MuseoSansCyrl, sans-serif;
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    background: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
+    background: -o-linear-gradient(left, #fcfcfc, #a3a3a3);
     background: linear-gradient(to right, #fcfcfc, #a3a3a3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .card{
+    background: -webkit-gradient(linear, left bottom, right top, from(rgba(110, 110, 110, 0.2)), to(rgba(0,0,0,0)));
+    background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.2), rgba(0,0,0,0));
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.2), rgba(0,0,0,0));
     width: 155px;
     height: 150px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .card1{
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card1:hover{
+    background: -webkit-gradient(linear, right bottom, left top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-bottom: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-image: linear-gradient(to top left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    -o-border-image: -o-linear-gradient(bottom right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+       border-image: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: linear-gradient(to top left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 
 .card2{
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card2:hover{
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
-    border-image: linear-gradient(to top right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    -o-border-image: -o-linear-gradient(bottom left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+       border-image: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: linear-gradient(to top right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 .card3{
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card3:hover{
+    background: -webkit-gradient(linear, right top, left bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
-    border-image: linear-gradient(to bottom left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    -o-border-image: -o-linear-gradient(top right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+       border-image: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: linear-gradient(to bottom left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 .card4{
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card4:hover{
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -o-linear-gradient(top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
-    border-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    -o-border-image: -o-linear-gradient(top left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+       border-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
@@ -303,6 +378,8 @@ body{
         height: 100px;
     }
     .cards{
+        background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), to(#a3a3a3));
+        background: -o-linear-gradient(left, #ffffff 50%, #a3a3a3);
         background: linear-gradient(to right, #ffffff 50%, #a3a3a3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -311,10 +388,18 @@ body{
 
 @media(max-width: 320px){
     .header_container{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 100px;
     }
     .header::after{
@@ -336,19 +421,30 @@ body{
         font-size: 8px;
     }
     .main .wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 320px;
     }
     .left_container{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 320px;
         margin-top: 100px;
     }
     .adventure{
         margin-top: 0;
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
         text-align: center;
     }
     .btn_point{
@@ -363,6 +459,8 @@ body{
     .cards{
         margin-top: 30px;
         padding: 0 5px 0;
+        background: -webkit-gradient(linear, right top, left top, from(#fcfcfc), to(#a3a3a3));
+        background: -o-linear-gradient(right, #fcfcfc, #a3a3a3);
         background: linear-gradient(to left, #fcfcfc, #a3a3a3);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
