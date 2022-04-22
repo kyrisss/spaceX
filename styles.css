@@ -209,17 +209,15 @@ body {
   height: 320px;
   font-family: MuseoSansCyrl, sans-serif;
   font-size: 16px;
-  background: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
-  background: linear-gradient(to right, #fcfcfc, #a3a3a3);
+  background-image: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
+  background-image: linear-gradient(to right, #fcfcfc, #a3a3a3);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  position: relative;
+  text-shadow: 0px 0px;
 }
 
 .card {
-  background: -webkit-gradient(linear, left bottom, right top, from(rgba(110, 110, 110, 0.2)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(to top right, rgba(110, 110, 110, 0.2), rgba(0, 0, 0, 0));
   width: 155px;
   height: 150px;
   cursor: pointer;
