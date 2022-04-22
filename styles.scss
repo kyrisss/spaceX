@@ -207,7 +207,7 @@ body {
     height: 150px;
     cursor: pointer;
     padding: 20px 0;
-    display: inline-block;
+    display: block;
 }
 
 .card1 {
@@ -215,6 +215,7 @@ body {
     // top: 0;
     // left: 0;
     margin-bottom: 20px;
+    float: left;
 }
 
 .card1:hover {
@@ -231,6 +232,8 @@ body {
     // top: 0;
     // right: 0;
     margin-bottom: 20px;
+    float: right;
+
 }
 
 .card2:hover {
@@ -245,6 +248,8 @@ body {
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     // bottom: 0;
     // left: 0;
+    float: left;
+
 }
 
 .card3:hover {
@@ -259,6 +264,8 @@ body {
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     // bottom: 0;
     // right: 0;
+    float: right;
+
 }
 
 .card4:hover {
