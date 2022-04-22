@@ -44,9 +44,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    border: .1px solid transparent;
+    border: .1px solid;
     border-image: linear-gradient(grey, grey);
     border-image-slice: 1;
 
@@ -156,8 +154,6 @@ body {
     padding: 11px 24px;
     cursor: pointer;
     position: relative;
-
-    border: .5px solid transparent;
     border-image: linear-gradient(10deg, rgba(102, 153, 204, 1) 20%, rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 1) 100%);
     border-image-slice: 1;
 
@@ -355,12 +351,12 @@ body {
     }
 
     .header_logo {
-        width: 100px;
+        width: 180px;
         height: 40px;
     }
 
     .logo {
-        width: 220px;
+        width: 150px;
     }
 
     .nav_list {
@@ -370,7 +366,7 @@ body {
     }
 
     .nav_link {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .main .wrapper {
