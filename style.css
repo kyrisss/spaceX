@@ -62,7 +62,7 @@ body{
 
     border: .1px solid transparent;
     -o-border-image: -o-linear-gradient( grey, grey);
-       border-image: -webkit-gradient( linear, left top, left bottom, from(grey), to(grey));
+       border-image: -webkit-linear-gradient( linear, left top, left bottom, from(grey), to(grey));
        border-image: linear-gradient( grey, grey);
     border-image-slice: 1;
 
@@ -129,7 +129,7 @@ body{
     max-width: 426px;
     font-family: MuseoSansCyrl, sans-serif;
     line-height: 1.2;
-    background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ff4106));
+    background: -webkit-linear-gradient(linear, left top, right top, from(#ffffff), to(#ff4106));
     background: -o-linear-gradient(left, #ffffff, #ff4106);
     background: linear-gradient(to right, #ffffff, #ff4106);
     -webkit-background-clip: text;
@@ -229,7 +229,7 @@ body{
         flex-wrap: wrap;
     -ms-flex-line-pack: justify;
         align-content: space-between;
-    background: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
+    background: -webkit-linear-gradient(linear, left top, right top, from(#fcfcfc), to(#a3a3a3));
     background: -o-linear-gradient(left, #fcfcfc, #a3a3a3);
     background: linear-gradient(to right, #fcfcfc, #a3a3a3);
     -webkit-background-clip: text;
@@ -237,7 +237,7 @@ body{
 }
 
 .card{
-    background: -webkit-gradient(linear, left bottom, right top, from(rgba(110, 110, 110, 0.2)), to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(linear, left bottom, right top, from(rgba(110, 110, 110, 0.2)), to(rgba(0,0,0,0)));
     background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.2), rgba(0,0,0,0));
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.2), rgba(0,0,0,0));
     width: 155px;
@@ -256,74 +256,74 @@ body{
 }
 
 .card1{
-    background: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, right bottom, left top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card1:hover{
-    background: -webkit-gradient(linear, right bottom, left top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, right bottom, left top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-bottom: 1px solid transparent;
     border-right: 1px solid transparent;
     -o-border-image: -o-linear-gradient(bottom right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
-       border-image: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: -webkit-linear-gradient(linear, right bottom, left top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
        border-image: linear-gradient(to top left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 
 .card2{
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, left bottom, right top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card2:hover{
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, left bottom, right top, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;
     -o-border-image: -o-linear-gradient(bottom left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
-       border-image: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: -webkit-linear-gradient(linear, left bottom, right top, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
        border-image: linear-gradient(to top right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 .card3{
-    background: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, right top, left bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card3:hover{
-    background: -webkit-gradient(linear, right top, left bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, right top, left bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-top: 1px solid transparent;
     border-right: 1px solid transparent;
     -o-border-image: -o-linear-gradient(top right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
-       border-image: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: -webkit-linear-gradient(linear, right top, left bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
        border-image: linear-gradient(to bottom left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
 
 .card4{
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, left top, right bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
 }
 
 .card4:hover{
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
+    background: -webkit-linear-gradient(linear, left top, right bottom, color-stop(20%, rgba(110, 110, 110, 0.3)), color-stop(50%, rgba(110, 110, 110, 0.1)),to(rgba(110, 110, 110, 0)));
     background: -o-linear-gradient(top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%,rgba(110, 110, 110, 0) 100%);
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     -o-border-image: -o-linear-gradient(top left, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
-       border-image: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
+       border-image: -webkit-linear-gradient(linear, left top, right bottom, color-stop(10%, rgba(212, 212, 212, 0.4)),  color-stop(20%, rgba(212, 212, 212, 0.1)), to(rgba(212, 212, 212, 0)));
        border-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.4) 10%,  rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
     border-image-slice: 1;
 }
@@ -465,7 +465,7 @@ body{
     .cards{
         margin-top: 30px;
         padding: 0 5px 0;
-        background: -webkit-gradient(linear, right top, left top, from(#fcfcfc), to(#a3a3a3));
+        background: -webkit-linear-gradient(linear, right top, left top, from(#fcfcfc), to(#a3a3a3));
         background: -o-linear-gradient(right, #fcfcfc, #a3a3a3);
         background: linear-gradient(to left, #fcfcfc, #a3a3a3);
         -webkit-background-clip: text;
