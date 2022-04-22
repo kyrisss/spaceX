@@ -222,13 +222,14 @@ body {
   height: 150px;
   cursor: pointer;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
 }
 
 .card1 {
   background: -webkit-gradient(linear, right bottom, left top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
   background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
   margin-bottom: 20px;
+  float: left;
 }
 
 .card1:hover {
@@ -246,6 +247,7 @@ body {
   background: -webkit-gradient(linear, left bottom, right top, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
   background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
   margin-bottom: 20px;
+  float: right;
 }
 
 .card2:hover {
@@ -262,6 +264,7 @@ body {
 .card3 {
   background: -webkit-gradient(linear, right top, left bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
   background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+  float: left;
 }
 
 .card3:hover {
@@ -278,6 +281,7 @@ body {
 .card4 {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, rgba(110, 110, 110, 0.1)), color-stop(30%, rgba(110, 110, 110, 0.05)), to(rgba(110, 110, 110, 0)));
   background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+  float: right;
 }
 
 .card4:hover {
